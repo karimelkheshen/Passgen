@@ -90,7 +90,7 @@ int main(void){
       printf("\n\t\t\t\t |        |    |        |         |    |   |        |  \\ |");
       printf("\n\t\t\t\t |        |    |   _____|         |____|   |_____   |   \\|");
 
-    printf("\n\n\n\t\t\t\t Version 1.0\n\t\t\t\t by Karim El Kheshen");
+    printf("\n\n\n\t\t\t\t Version 1.1\n\t\t\t\t by Karim El Kheshen");
     
     printf("\n\n\n\n\t\t\t\t Please enter one of the following password options : \n");
     printf("\n\t\t\t\t '1': SIMPLE : Relatively easy to remember. Frequent login applications.");
