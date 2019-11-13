@@ -60,11 +60,42 @@ void pass_2_gen(void){
     printf("\n\n\n\n\n");
 }
 
+void pass_3_gen(void){
+    int num_array[10] = { 0,1,2,3,4,5,6,7,8,9};
+    char sym_array[8] = {'!','$','%','*','&','?','_','-'};
+    char CAP_array[MAX_ALPH] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+    char low_array[MAX_ALPH] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+    time_t t;
+    srand((unsigned)time(&t));
+    printf("\n\n\t\t\t\t\t\t\t\t ");
+    for (int i = 0; i < 4; i++) {
+        printf("%c", low_array[rand()%10]);
+    }
+    printf("-");
+    printf("%c", sym_array[rand()%10]);
+    printf("%d", num_array[rand()%10]);
+    printf("-");
+    for (int j = 0; j < 4; j++) {
+        printf("%c", CAP_array[rand()%10]);
+    }
+    printf("\n\n\n\n\n");
+    
+}
+
 int main(void){
     
-    printf("\n\n\t\t\t\t Please enter one of the following password options : \n");
-    printf("\n\t\t\t\t '1' : Relatively easy to remember. Frequent login applications.");
-    printf("\n\t\t\t\t '2' : Highly abstract. Long formatted. Infrequent login applications.");
+    printf("\n\n\t\t\t\t ______   ______   ______         ______   ______   __  ___ ");
+      printf("\n\t\t\t\t |     |  |    |   |              |        |        |\\   |");
+      printf("\n\t\t\t\t |_____|  |____|   |_____         |   __   |___     | \\  |");
+      printf("\n\t\t\t\t |        |    |        |         |    |   |        |  \\ |");
+      printf("\n\t\t\t\t |        |    |   _____|         |____|   |_____   |   \\|");
+
+    printf("\n\n\n\t\t\t\t Version 1.0\n\t\t\t\t by Karim El Kheshen");
+    
+    printf("\n\n\n\n\t\t\t\t Please enter one of the following password options : \n");
+    printf("\n\t\t\t\t '1': SIMPLE : Relatively easy to remember. Frequent login applications.");
+    printf("\n\t\t\t\t '2': COMPLEX : Highly abstract. Long formatted. Infrequent login applications.");
+    printf("\n\t\t\t\t '3': MODERATE : Half way between simple and complex.");
     printf("\n\n\t\t\t\t >>> ");
     char answer;
     scanf(" %c", &answer);
@@ -74,5 +105,8 @@ int main(void){
     }
     else if (answer == '2') {
         pass_2_gen();
+    }
+    else if (answer == '3') {
+        pass_3_gen();
     }
 }
