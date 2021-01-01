@@ -1,2 +1,2 @@
 # Passgen
-A simple C program that generates passwords. Originally created after learning how easy it is to crack passwords.
+C program that generates all types of passwords according to the user's choice.
